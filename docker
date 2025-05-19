@@ -1,0 +1,5 @@
+FROM openjdk:17-jdk-slim
+WORKDIR /maxsoft-intelliapi
+COPY target/*.jar/
+EXPOSE 8181:8080
+ENTRYPOINT ["java", "-jar", "docker.jar"]
